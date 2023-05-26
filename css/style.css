@@ -1,0 +1,7 @@
+.article-buttons {
+  display: flex;
+}
+
+.article-buttons button:not(:first-child) {
+  margin-left: 0.5rem;
+}

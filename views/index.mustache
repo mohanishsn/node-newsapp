@@ -1,0 +1,28 @@
+<html>
+  <head>
+    {{> header}}
+  </head>
+
+  <body>
+    <h1>All Articles</h1>
+
+    <div class="container">
+      {{> menu}}
+
+      <div class="list-group">
+        {{#articles}}
+          <div class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{{title}}</h5>
+              <small>{{datecreated}}</small>
+            </div>
+            <p class="mb-1">{{body}}</p>
+          </div>
+        {{/articles}}
+      </div>
+    </div>
+
+    {{> footer}}
+
+  </body>
+</html>

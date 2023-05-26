@@ -1,0 +1,32 @@
+<html>
+  <head>
+    {{> header}}
+  </head>
+
+  <body>
+    <h1>My Articles</h1>
+
+    <div class="container">
+      {{> menu}}
+
+      <div class="list-group">
+        {{#articles}}
+          <div class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{{title}}</h5>
+              <small>{{datecreated}}</small>
+            </div>
+            <p class="mb-1">{{body}}</p>
+            <div class="article-buttons">
+              <button class="btn btn-primary" onclick="location.href='/users/articles/edit/{{articleid}}'" type="button">Edit</button>
+              <button class="btn btn-danger" onclick="location.href='/users/articles/delete/{{articleid}}'" type="button">Delete</button>
+            </div>
+          </div>
+        {{/articles}}
+      </div>
+    </div>
+
+    {{> footer}}
+
+  </body>
+</html>
