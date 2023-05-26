@@ -11,7 +11,8 @@ const indexRoutes = require('./routes/index')
 const userRoutes = require('./routes/users')
 
 const PORT = process.env.PORT || 8080
-const CONNECTION_STRING = "postgres://localhost:5432/newsdb"
+// const CONNECTION_STRING = "postgres://localhost:5432/newsdb"
+const CONNECTION_STRING = "postgres://newsdb_uaw4_user:FnY2bbvAd4ocbdazajoOnejkdLs3WCwz@dpg-chografdvk4goeofm7ig-a.oregon-postgres.render.com/newsdb_uaw4"
 const VIEWS_PATH = path.join(__dirname, '/views')
 
 // configure your view engine
